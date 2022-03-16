@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 12px 48px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: inherit;
+  border-radius: 8px;
+  transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.white {
+  background: white;
+  color: #7B04DF;
+}
+
+.purple {
+  color: white;
+  background: #7B04DF;
+  border: 2px solid #7B04DF;
+}
+
+.purple:hover {
+  border: 2px solid #6513AA;
+}
+
+.purple:active {
+  border: 2px solid #6513AA;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
+}

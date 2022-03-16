@@ -1,0 +1,30 @@
+.workedWith {
+  margin-top: 88px;
+  margin-bottom: 64px;
+  padding: 0 16px;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 66px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.cardContainer {
+  margin-top: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+  grid-gap: 24px;
+}
+
+@media all and (min-width: 768px) {
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+}
