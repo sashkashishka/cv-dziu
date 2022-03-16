@@ -19,12 +19,16 @@
 }
 
 @media all and (min-width: 768px) {
+  .lastCard {
+    grid-template-columns: 45% 55%;
+  }
+
   .right {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     grid-gap: 0;
-    padding: 38px 32px 38px 0;
+    padding: 38px 48px 38px 0;
     margin-bottom: 0;
   }
 
