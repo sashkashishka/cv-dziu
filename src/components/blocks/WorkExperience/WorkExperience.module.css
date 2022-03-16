@@ -1,0 +1,55 @@
+.workExperience {
+  padding: 0 16px;
+  margin-top: 48px;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 66px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 32px;
+}
+
+.skillBlock {
+  margin-bottom: 32px;
+}
+
+.cardContainer:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.listTitle {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+}
+
+
+.list li {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.list li::before {
+  content: '•';
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@media all and (min-width: 768px) {
+  .subtitle {
+    text-align: center;
+  }
+
+  .list {
+    columns: 2;
+    column-gap: 32px;
+  }
+}
+

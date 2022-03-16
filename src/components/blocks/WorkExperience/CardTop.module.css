@@ -1,0 +1,57 @@
+.cardTop {
+  padding: 32px 16px;
+  margin-bottom: 8px;
+  background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.09) 114%);
+  backdrop-filter: blur(100px);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.logoImg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 8.0218px 6.41744px rgba(0, 0, 0, 0.0196802), 0px 3.35132px 2.68105px rgba(0, 0, 0, 0.0282725), 0px 1.79177px 1.43342px rgba(0, 0, 0, 0.035), 0px 1.00445px 0.803563px rgba(0, 0, 0, 0.0417275), 0px 0.533458px 0.426766px rgba(0, 0, 0, 0.0503198), 0px 0.221984px 0.177587px rgba(0, 0, 0, 0.07);
+  border-radius: 6.73831px;
+}
+
+.time,
+.workTitle {
+  margin-bottom: 4px;
+}
+
+.workTitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.buttonLink {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.button {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .cardTop {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 24px;
+    padding: 48px 24px;
+    align-items: center;
+  }
+
+  .logoImg {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+
+  .time {
+    margin-bottom: 16px;
+  }
+}

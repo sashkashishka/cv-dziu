@@ -15,6 +15,16 @@
 .white {
   background: white;
   color: #7B04DF;
+  border: 1px solid white;
+}
+
+.white:hover {
+  border: 1px solid #7B04DF;
+}
+
+.white:active {
+  border: 1px solid #7B04DF;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
 .purple {

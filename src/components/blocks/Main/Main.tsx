@@ -2,11 +2,10 @@ import * as React from 'react';
 import cn from 'classnames';
 
 import { Button } from '../../Button';
-import { Spacer } from '../../Spacer';
+import { DownloadCV } from '../../DownloadCV';
 
 import { Card } from './Card';
 
-import downloadIcon from '../../../icons/download.svg';
 import behanceIcon from '../../../icons/behance.svg';
 import dribbleIcon from '../../../icons/dribble.svg';
 
@@ -40,17 +39,9 @@ export const MainBlock: React.FC = () => {
           <p>
             Валидирую гипотезы и превращаю их в деньги.
           </p>
-          <Button
-            type="button"
+          <DownloadCV
             className={styles.mainLeftButton}
-          >
-            Cкачать CV
-            <img
-              className={styles.mainLeftButtonIcon}
-              src={downloadIcon} 
-              alt=""
-            />
-          </Button>
+          />
         </div>
 
         <div className={styles.mainRight}>
