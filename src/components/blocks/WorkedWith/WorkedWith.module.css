@@ -1,6 +1,5 @@
 .workedWith {
   margin-top: 88px;
-  margin-bottom: 64px;
   padding: 0 16px;
 }
 
@@ -17,14 +16,23 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   grid-gap: 24px;
+  margin-bottom: 24px;
 }
 
 @media all and (min-width: 768px) {
+  .workedWith {
+    margin-top: 226px;
+    padding: 0 16px;
+  }
+
   .title,
   .subtitle {
     text-align: center;
   }
 
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
 }

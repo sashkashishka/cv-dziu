@@ -2,6 +2,11 @@ import * as React from 'react';
 import cn from 'classnames';
 
 import { Button } from '../../Button';
+import { Card } from './Card';
+import { LastCard } from './LastCard';
+
+import { gridCards } from './constants';
+
 
 import styles from './WorkedWith.module.css';
 
@@ -17,8 +22,21 @@ export const WorkedWith: React.FC = () => {
 
       <div className={styles.cardContainer}>
         <div className={styles.grid}>
-
+          {
+            gridCards.map(card => (
+              <Card
+                key={card.title}
+                {...card}
+              />
+            ))
+          }
         </div>
+
+        <LastCard
+          title="Это не всё"
+          subtitle="Добавил самые основные проекты, с которыми я работал. При встрече, смогу рассказать более детально"
+        />
+          
 
       </div>
     </div>

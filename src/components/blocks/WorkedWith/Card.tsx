@@ -22,15 +22,18 @@ export const Card: React.FC<iCardProps> = ({
   return (
     <div className={styles.card}>
       <div className={styles.left}>
-        <img
-          className={styles.logoImg}
-          src={logoImg}
-          alt={title} 
-        />
+        <div className={styles.infoBlock}>
+          <img
+            className={styles.logoImg}
+            src={logoImg}
+            alt={title} 
+          />
 
-        <p className={styles.title}>{title}</p>
-        <p className={styles.subtitle}>{subtitle}</p>
-
+          <div>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.subtitle}>{subtitle}</p>
+          </div>
+        </div>
         <a
           className={styles.buttonLink}
           href={url}

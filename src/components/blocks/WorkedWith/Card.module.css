@@ -1,49 +1,80 @@
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
   align-items: center;
-  padding: 32px 16px;
+  min-height: 240px;
   background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.09) 114%);
   backdrop-filter: blur(100px);
   border-radius: 25px;
 }
 
-.icon {
+.left {
+  padding: 32px 16px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoImg {
   width: 48px;
   height: 48px;
+  margin-bottom: 16px;
+  background: white;
+  box-shadow: 0px 8.0218px 6.41744px rgba(0, 0, 0, 0.0196802), 0px 3.35132px 2.68105px rgba(0, 0, 0, 0.0282725), 0px 1.79177px 1.43342px rgba(0, 0, 0, 0.035), 0px 1.00445px 0.803563px rgba(0, 0, 0, 0.0417275), 0px 0.533458px 0.426766px rgba(0, 0, 0, 0.0503198), 0px 0.221984px 0.177587px rgba(0, 0, 0, 0.07);
+  border-radius: 6.73831px;
 }
+
 
 .title {
   margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 150%;
   font-weight: bold;
 }
 
+.phoneImg {
+  justify-self: center;
+  align-self: end;
+}
+
 .buttonLink {
+  display: block;
   width: 100%;
+  max-width: 310px;
 }
 
 .button {
   width: 100%;
-  margin-top: 32px;
-}
-
-.awardContainer {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-column-gap: 12px;
-  transform: translateX(-50%);
+  margin-top: 14px;
 }
 
 @media all and (min-width: 768px) {
   .card {
-    padding-top: 94px;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-column-gap: 24px;
   }
 
-  .icon {
-    margin-bottom: 80px;
+  .left {
+    padding: 0 0 0 16px;
+  }
+
+  .logoImg {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phoneImg {
+    margin-right: 32px;
   }
 }

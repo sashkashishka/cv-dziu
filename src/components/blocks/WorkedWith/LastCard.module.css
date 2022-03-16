@@ -1,0 +1,36 @@
+.lastCard {
+  min-height: auto;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, auto));
+  grid-gap: 72px;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.logoImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+}
+
+@media all and (min-width: 768px) {
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-gap: 0;
+    padding: 38px 32px 38px 0;
+    margin-bottom: 0;
+  }
+
+  .logoImg {
+    width: 64px;
+    height: 64px;
+    margin: 16px;
+  }
+}
