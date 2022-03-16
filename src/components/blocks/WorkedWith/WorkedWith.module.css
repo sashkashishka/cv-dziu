@@ -1,6 +1,19 @@
 .workedWith {
+  position: relative;
   margin-top: 88px;
   padding: 0 16px;
+}
+
+.workedWith::before {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 602.17px;
+  height: 602.17px;
+  background: linear-gradient(90deg, rgba(184, 203, 184, 0.8) 0%, rgba(184, 203, 184, 0.8) 0%, rgba(180, 101, 218, 0.8) 0%, rgba(207, 108, 201, 0.8) 33%, rgba(238, 96, 156, 0.8) 66%, rgba(238, 96, 156, 0.8) 100%);
+  filter: blur(700px);
+  border-radius: 9000px;
+  z-index: -1;
 }
 
 .title {

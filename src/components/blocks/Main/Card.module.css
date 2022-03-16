@@ -8,6 +8,7 @@
   background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.09) 114%);
   backdrop-filter: blur(100px);
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .card:not(:first-child) {
@@ -23,6 +24,7 @@
 .title {
   margin-bottom: 4px;
   font-weight: bold;
+  text-align: center;
 }
 
 .buttonLink {
@@ -42,6 +44,58 @@
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 12px;
   transform: translateX(-50%);
+}
+
+.elipse {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blue {
+  width: 168.66px;
+  height: 219px;
+  left: -50px;
+  top: -48px;
+  background: linear-gradient(90deg, #89F7FE 0%, #66A6FF 100%);
+  filter: blur(36px);
+  transform: rotate(-20.45deg);
+}
+
+.purple {
+  width: 155.98px;
+  height: 271.1px;
+  right: -36px;
+  bottom: -72px;
+  background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
+  filter: blur(36px);
+  transform: rotate(-20.45deg);
+}
+
+.yellow {
+  width: 90px;
+  height: 90px;
+  left: -60px;
+  bottom: 40px;
+  background: linear-gradient(90deg, #96FBC4 0%, #F9F586 100%);
+  filter: blur(24px);
+}
+
+.orange {
+  background: linear-gradient(90deg, rgba(255, 236, 210, 0.5) 0%, rgba(252, 182, 159, 0.5) 100%);
+}
+
+.green {
+  background: linear-gradient(90deg, rgba(67, 233, 123, 0.5) 0%, rgba(56, 249, 215, 0.5) 100%);
+}
+
+.white {
+  left: auto;
+  bottom: auto;
+  right: 0;
+  top: 0;
+  transform: translate(90%, 50%);
+  background: linear-gradient(90deg, rgba(253, 251, 251, 0.5) 0%, rgba(235, 237, 238, 0.5) 100%);
 }
 
 @media all and (min-width: 768px) {

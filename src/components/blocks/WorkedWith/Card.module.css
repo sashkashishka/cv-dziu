@@ -7,6 +7,7 @@
   background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.09) 114%);
   backdrop-filter: blur(100px);
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .left {
@@ -51,6 +52,32 @@
   margin-top: 14px;
 }
 
+.elipse {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blue {
+  width: 168.66px;
+  height: 219px;
+  left: -50px;
+  top: -24px;
+  background: linear-gradient(90deg, rgba(137, 247, 254, 0.5) 0%, rgba(102, 166, 255, 0.5) 100%); 
+  filter: blur(36px);
+  transform: rotate(-20.45deg);
+}
+
+.red {
+  width: 168.66px;
+  height: 219px;
+  right: -24px;
+  bottom: 24px;
+  background: linear-gradient(90deg, rgba(255, 154, 158, 0.5) 0%, rgba(250, 208, 196, 0.5) 99%, rgba(250, 208, 196, 0.5) 100%);
+  filter: blur(36px);
+  transform: rotate(-20.45deg);
+}
+
 @media all and (min-width: 768px) {
   .card {
     grid-template-rows: auto;
@@ -76,5 +103,10 @@
 
   .phoneImg {
     margin-right: 32px;
+  }
+
+  .red {
+    bottom: -48px;
+    right: 112px;
   }
 }

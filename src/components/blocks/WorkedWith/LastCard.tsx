@@ -46,6 +46,9 @@ export const LastCard: React.FC<iLastCardProps> = ({
 }) => {
   return (
     <div className={cn(styles.card, lastStyl.lastCard)}>
+      <div className={cn(styles.elipse, styles.blue)}/>
+      <div className={cn(styles.elipse, styles.red)}/>
+
       <div className={styles.left}>
         <div className={styles.infoBlock}>
           <img

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import cn from 'classnames';
 
 import { Button } from '../../Button';
 
@@ -19,6 +20,10 @@ export const Card: React.FC<iCardProps> = ({
 }) => {
   return (
     <div className={styles.card}>
+      <div className={cn(styles.elipse, styles.blue, !hasAwards && styles.orange)}/>
+      <div className={cn(styles.elipse, styles.purple, !hasAwards && styles.green)}/>
+      <div className={cn(styles.elipse, styles.yellow, !hasAwards && styles.white)}/>
+
       {
         hasAwards && (
           <div className={styles.awardContainer}>

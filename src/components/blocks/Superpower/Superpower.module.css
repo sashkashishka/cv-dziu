@@ -1,6 +1,31 @@
 .superpower {
+  position: relative;
   padding: 0 16px;
   margin-top: 48px;
+}
+
+.superpower::before,
+.superpower::after {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 686px;
+  height: 686px;
+  top: 50%;
+  background: linear-gradient(180deg, #DB04DF 0%, #04C5DF 100%);
+  filter: blur(700px);
+  border-radius: 9000px;
+  z-index: -1;
+}
+
+.superpower::before {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.superpower::after {
+  right: 0;
+  transform: translate(30%, -30%);
 }
 
 .title {
@@ -40,6 +65,11 @@
     grid-template-columns: auto 1fr;
     grid-column-gap: 177px;
     margin-top: 144px;
+  }
+
+  .superpower::before,
+  .superpower::after {
+    display: block;
   }
 
   .list {

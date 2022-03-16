@@ -1,0 +1,39 @@
+.app::before,
+.app::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  background: linear-gradient(180deg, #DB04DF 0%, #04C5DF 100%);
+  filter: blur(700px);
+  border-radius: 9000px;
+  z-index: -1;
+}
+
+.app::before {
+  width: 320px;
+  height: 320px;
+  left: 0;
+  transform: translate(-20%, 10%);
+}
+
+.app::after {
+  width: 320px;
+  height: 320px;
+  right: 0;
+  transform: translate(30%, -30%);
+}
+
+@media all and (min-width: 1024px) {
+  .app::before {
+    width: 686px;
+    height: 686px;
+    transform: translate(-20%, 10%);
+  }
+
+  .app::after {
+    width: 686px;
+    height: 686px; 
+    transform: translate(20%, 50%);
+  }
+}
