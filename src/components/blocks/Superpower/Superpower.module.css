@@ -1,0 +1,49 @@
+.superpower {
+  padding: 0 16px;
+  margin-top: 48px;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 66px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.skillBlock {
+  margin-bottom: 32px;
+}
+
+.listTitle {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+}
+
+
+.list li {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.list li::before {
+  content: '•';
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@media all and (min-width: 1024px) {
+  .superpower {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 177px;
+    margin-top: 144px;
+  }
+
+  .list {
+    columns: 2;
+    column-gap: 32px;
+  }
+}

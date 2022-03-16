@@ -1,0 +1,1 @@
+export { Superpower } from './Superpower';
