@@ -17,21 +17,27 @@ import lastStyl from './LastCard.module.css';
 const logos = [
   {
     logoImg: somethingLogo,
+    url: 'https://datobatono.com/',
   },
   {
     logoImg: indevLogo,
+        url: 'https://indevlab.com/',
   },
   {
     logoImg: eLogo,
+        url: 'https://www.eve.ua/',
   },
   {
     logoImg: domLogo,
+        url: '#',
   },
   {
     logoImg: interkassaLogo,
+        url: '#',
   },
   {
     logoImg: malvinaLogo,
+        url: 'https://malvinabeauty.ru/',
   },
 ];
 
@@ -69,11 +75,12 @@ export const LastCard: React.FC<iLastCardProps> = ({
       >
         {
           logos.map(({ logoImg }) => (
-            <img
-              key={logoImg}
-              className={cn(lastStyl.logoImg)}
-              src={logoImg}
-            />
+            <a key={logoImg} href={url}>
+              <img
+                className={cn(lastStyl.logoImg)}
+                src={logoImg}
+              />
+            </a>
           ))
         }
       </div>

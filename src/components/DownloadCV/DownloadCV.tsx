@@ -11,7 +11,7 @@ export const DownloadCV: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>>
     type="button"
     className={className}
     onClick={() => {
-      window.open('#', '_blank');
+      window.open('https://drive.google.com/file/d/1OFYS7VCwJh-rrBSRFQImOC7FUKRMmYkZ/view?usp=sharing', '_blank');
     }}
   >
     Cкачать CV
