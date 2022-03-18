@@ -14,30 +14,30 @@
 
 .white {
   background: white;
-  color: #7B04DF;
+  color: #7b04df;
   border: 1px solid white;
 }
 
 .white:hover {
-  border: 1px solid #7B04DF;
+  border: 1px solid #7b04df;
 }
 
 .white:active {
-  border: 1px solid #7B04DF;
+  border: 1px solid #7b04df;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
 .purple {
   color: white;
-  background: #7B04DF;
-  border: 2px solid #7B04DF;
+  background: #7b04df;
+  border: 2px solid #7b04df;
 }
 
 .purple:hover {
-  border: 2px solid #6513AA;
+  border: 2px solid #fff;
 }
 
 .purple:active {
-  border: 2px solid #6513AA;
+  border: 2px solid #fff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
