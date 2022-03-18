@@ -94,6 +94,12 @@
 .sliderContainer {
   display: flex;
   flex-wrap: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.sliderContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .mainRight {
