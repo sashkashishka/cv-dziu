@@ -1,3 +1,48 @@
+.mainBlock {
+  position: relative;
+  overflow: hidden;
+}
+
+.mainBlock::before,
+.mainBlock::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  background: linear-gradient(180deg, #db04df 0%, #04c5df 100%);
+  filter: blur(700px);
+  border-radius: 9000px;
+  z-index: -1;
+}
+
+.mainBlock::before {
+  width: 320px;
+  height: 320px;
+  left: 0;
+  transform: translate(-20%, 10%);
+}
+
+.mainBlock::after {
+  width: 320px;
+  height: 320px;
+  right: 0;
+  transform: translate(30%, -30%);
+}
+
+@media all and (min-width: 1024px) {
+  .mainBlock::before {
+    width: 686px;
+    height: 686px;
+    transform: translate(-20%, 10%);
+  }
+
+  .mainBlock::after {
+    width: 686px;
+    height: 686px;
+    transform: translate(20%, 50%);
+  }
+}
+
 .navTop {
   display: flex;
   align-items: center;
