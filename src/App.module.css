@@ -1,10 +1,10 @@
 .app::before,
 .app::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   top: 0;
-  background: linear-gradient(180deg, #DB04DF 0%, #04C5DF 100%);
+  background: linear-gradient(180deg, #db04df 0%, #04c5df 100%);
   filter: blur(700px);
   border-radius: 9000px;
   z-index: -1;
@@ -22,6 +22,7 @@
   height: 320px;
   right: 0;
   transform: translate(30%, -30%);
+  background: linear-gradient(180deg, #7b04df 0%, #04dfdf 100%);
 }
 
 @media all and (min-width: 1024px) {
@@ -33,7 +34,19 @@
 
   .app::after {
     width: 686px;
-    height: 686px; 
+    height: 686px;
     transform: translate(20%, 50%);
+    background: linear-gradient(180deg, #db04df 0%, #04c5df 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(219, 220, 215, 0.5) 0%,
+      rgba(221, 220, 215, 0.5) 24%,
+      rgba(226, 201, 204, 0.5) 30%,
+      rgba(231, 98, 125, 0.5) 46%,
+      rgba(184, 35, 90, 0.5) 59%,
+      rgba(128, 19, 87, 0.5) 71%,
+      rgba(61, 22, 53, 0.5) 84%,
+      rgba(28, 26, 39, 0.5) 100%
+    );
   }
 }

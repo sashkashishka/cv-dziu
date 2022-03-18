@@ -48,6 +48,6 @@
 
   .list {
     columns: 3;
-    column-gap: 32px;
+    column-gap: 112px;
   }
 }
