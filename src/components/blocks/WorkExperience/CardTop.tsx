@@ -33,7 +33,7 @@ export const CardTop: React.FC<iCardTopProps> = ({
         <p className={styles.description}>{description}</p>
       </div>
 
-      <a className={styles.buttonLink} href={url}>
+      <a className={styles.buttonLink} href={url} target="_blank">
         <Button
           type="button"
           variant="white"

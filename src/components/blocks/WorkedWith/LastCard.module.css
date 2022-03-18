@@ -36,5 +36,7 @@
     width: 64px;
     height: 64px;
     margin: 16px;
+    border: 2px solid #c785ff;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
   }
 }
