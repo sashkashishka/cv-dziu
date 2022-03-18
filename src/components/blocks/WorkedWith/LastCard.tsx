@@ -74,7 +74,8 @@ export const LastCard: React.FC<iLastCardProps> = ({
         className={lastStyl.right}
       >
         {
-          logos.map(({ logoImg }) => (
+          logos.map(({ logoImg, url
+          }) => (
             <a key={logoImg} href={url}>
               <img
                 className={cn(lastStyl.logoImg)}
