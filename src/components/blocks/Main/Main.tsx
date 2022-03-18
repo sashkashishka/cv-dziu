@@ -13,8 +13,8 @@ import styles from './Main.module.css';
 
 export const MainBlock: React.FC = () => {
   return (
-    <React.Fragment>
-      <nav className={cn('section', styles.navTop)}>
+    <div className={cn('section', styles.mainBlock)}>
+      <nav className={cn(styles.navTop)}>
         <p className={styles.navTopTitle}>
           Dziubak Oleksiy
         </p>
@@ -28,7 +28,7 @@ export const MainBlock: React.FC = () => {
         <a href="tel:+380 (73) 101-72-56">+380 (73) 101-72-56</a>
       </nav>
 
-      <section className={cn('section', styles.main)}>
+      <section className={cn(styles.main)}>
         <div className={styles.mainLeft}>
           <p className={cn(styles.mainTitle, styles.mainTitleDesktop)}>
             Я продуктовый дизайнер с полезным опытом
@@ -67,11 +67,11 @@ export const MainBlock: React.FC = () => {
         </div>
       </section>
 
-      <nav className={cn('section', styles.navBottom)}>
+      <nav className={cn(styles.navBottom)}>
         <a href="https://t.me/Alex_SayDz">Telegram</a>
         <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>
         <a href="mailto:randomtext95@gmail.com">Почта</a>
       </nav>
-    </React.Fragment>
+    </div>
   );
 };
