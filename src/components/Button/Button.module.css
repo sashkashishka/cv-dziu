@@ -34,10 +34,10 @@
 }
 
 .purple:hover {
-  border: 2px solid #fff;
+  border: 2px solid #c785ff;
 }
 
 .purple:active {
-  border: 2px solid #fff;
+  border: 2px solid #c785ff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
