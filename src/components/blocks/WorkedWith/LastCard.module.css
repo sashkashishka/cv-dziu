@@ -16,6 +16,8 @@
   width: 80px;
   height: 80px;
   border-radius: 16px;
+  border: 2px solid white;
+  transition: border 0.3s ease;
 }
 
 @media all and (min-width: 768px) {
@@ -37,4 +39,10 @@
     height: 64px;
     margin: 16px;
   }
+}
+
+.logoImg:hover {
+  color: white;
+  background: #7b04df;
+  border: 2px solid #7b04df;
 }
