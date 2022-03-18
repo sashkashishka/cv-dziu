@@ -15,15 +15,15 @@
 .white {
   background: white;
   color: #7b04df;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .white:hover {
-  border: 2px solid #7b04df;
+  border: 2px solid #c785ff;
 }
 
 .white:active {
-  border: 1px solid #7b04df;
+  border: 1px solid #c785ff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
