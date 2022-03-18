@@ -11,7 +11,7 @@ export const DownloadCV: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>>
     type="button"
     className={className}
     onClick={() => {
-      window.open('https://drive.google.com/file/d/1OFYS7VCwJh-rrBSRFQImOC7FUKRMmYkZ/view?usp=sharing', '_blank');
+      window.open('https://cv.djinni.co/e5/4f3f6cc186bac55c9b7c19bee9ec4d/Dzubak_Aleksei.pdf', '_blank');
     }}
   >
     Cкачать CV
