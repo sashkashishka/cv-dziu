@@ -48,7 +48,7 @@ export const MainBlock: React.FC = () => {
           <div className={styles.sliderContainer}>
             <Card
               title="Профиль Behance"
-              url="be.net/randomtext2cb5"
+              url="https://www.behance.net/randomtext2cb5"
               icon={behanceIcon}
               hasAwards
             />
