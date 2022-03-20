@@ -14,7 +14,7 @@ export const Superpower: React.FC = () => {
         <div className={styles.skillBlock}>
           <p className={styles.listTitle}>Hard</p>
           <ul className={styles.list}>
-            <li> UX analytics interaction</li>
+            <li>UX analytics interaction</li>
             <li>CJM/Flowchart development</li>
             <li>Scrum/Kanban</li>
             <li>Roadmap creation</li>
@@ -22,7 +22,7 @@ export const Superpower: React.FC = () => {
             <li>Doing research</li>
             <li>Documents development and maintenance</li>
             <li>Web/app interface design</li>
-            <li>UIkit/Design system development</li>
+            <li>UI kit/Design system development</li>
             <li>User interviews</li>
           </ul>
         </div>
@@ -35,7 +35,7 @@ export const Superpower: React.FC = () => {
             <li>Responsibility and purposefulness</li>
             <li>Attention to details</li>
             <li>Critical thinking</li>
-            <li> Full case study and resolving</li>
+            <li>Full case study and resolving</li>
             <li>Self-management and time management</li>
             <li>Reasonable and thoughtful decision-making</li>
             

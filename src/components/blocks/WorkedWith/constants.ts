@@ -35,7 +35,7 @@ export const gridCards = [
     url: 'https://apps.apple.com/ua/app/lg-catalogue/id1535946342?l=ru',
   },
   {
-    title: 'Kiyvstar',
+    title: 'Kyivstar',
     subtitle: 'The leading mobile carrier in Ukraine',
     logoImg: kyivstarLogo,
     phoneImg: kyivstarPhone,

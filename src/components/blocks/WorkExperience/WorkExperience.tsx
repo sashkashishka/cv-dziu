@@ -25,7 +25,7 @@ export const WorkExperience: React.FC = () => {
           <CardTop
             workTitle="Product Designer @ prom.ua"
             time="🗓 01/10/2020  — now"
-            description="Have been closely cooperating with Rozetka and Prom+ teams. Took part in marketplace redesign, worked on product card, product listings, design system creation and documentation maintenance."
+            description="Have been closely cooperating with Rozetka and Prom+ teams. Took part in marketplace redesign, worked on product card, product listings, design system creation and documentation maintenance"
             logoImg={promLogo}
             url="https://prom.ua/"
           />
@@ -96,7 +96,7 @@ as to work on the famous movie festival Molodist-48"
             <ul className={styles.list}>
               <li>UI\UX audit</li>
               <li>Сreate banner</li>
-              <li>РWork on the composition and components</li>
+              <li>Work on the composition and components</li>
               <li>Interaction with developers</li>
               <li>Interaction with marketing department</li>
               <li>Creation of the UI kit</li>
