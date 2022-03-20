@@ -94,21 +94,21 @@ as to work on the famous movie festival Molodist-48"
           <CardBottom>
             <p className={styles.listTitle}>Assignments</p>
             <ul className={styles.list}>
-              <li>UI\UX audit</li>
-              <li>Сreate banner</li>
-              <li>Work on the composition and components</li>
-              <li>Interaction with developers</li>
-              <li>Interaction with marketing department</li>
-              <li>Creation of the UI kit</li>
-              <li>Framework development</li>
-              <li>Project estimation</li>
-              <li>Prototyping</li>
-              <li>Marketing materials design</li>
-              <li>Polygraphy materials and banner creation</li>
-              <li>Design QA</li>
-              <li>Ideas protection</li>
-              <li>Reasonable and thoughtful decision-making</li>
-              <li>Interaction with multiple project managers simultaneously</li>
+              <li>Banners creation</li>
+              <li>Mutual briefing with clients</li>
+              <li>Concepts and drafts design</li>
+              <li>Website prototyping</li>
+              <li>Hypothesis discussions in a team</li>
+              <li>Creation of design processes</li>
+              <li>Design review and improvements</li>
+              <li>Brandbooks creation</li>
+              <li> Maintaining websites</li>
+              <li>Ads creatives</li>
+              <li>Experience in Adobe Illustrator</li>
+              <li>Icons creation</li>
+              <li>Communication Cinema4D</li>
+              <li>Communication with stakeholders</li>
+              <li>References collection</li>
             </ul>
           </CardBottom>
         </div>
