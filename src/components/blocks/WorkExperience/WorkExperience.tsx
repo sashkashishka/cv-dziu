@@ -14,47 +14,39 @@ export const WorkExperience: React.FC = () => {
   return (
     <div className={cn('section', styles.workExperience)}>
       <h2 className={styles.title}>
-       Опыт работы 
+       Work experience 
       </h2>
       <p className={styles.subtitle}>
-        Род деятельности, описание диапазона работы
+        Occupation and range of work description
       </p>
 
       <div>
         <div className={styles.cardContainer}>
           <CardTop
             workTitle="Product Designer @ prom.ua"
-            time="🗓 01/10/2020  — по сей день"
-            description="За время работки тестно сотрудничали с командой Rozetka и Prom+.Учавствовал в редизайне маркетплейса работал над карточкой товара,выдачей в листинге, созданием Дизайн системы и ведении документации."
+            time="🗓 01/10/2020  — now"
+            description="Have been closely cooperating with Rozetka and Prom+ teams. Took part in marketplace redesign, worked on product card, product listings, design system creation and documentation maintenance."
             logoImg={promLogo}
             url="https://prom.ua/"
           />
 
           <CardBottom>
-            <p className={styles.listTitle}>Задачи</p>
+            <p className={styles.listTitle}>Assignments:</p>
             <ul className={styles.list}>
-              <li>Эстимация задач</li>
-              <li>Проведение А/Б тестирование</li>
-              <li>Выполнение по спринтам/канбан</li>
-              <li>Cоставления скрипта интервью.</li>
-              <li>Выдвижение гипотез и работа с ними</li>
-              <li>Выполнение по канбану</li>
-              <li>Оцифровка интервью</li>
-              <li>Создание UI kit</li>
-              <li>Транскрибация</li>
-              <li>Research wall определение архетипов</li>
-              <li>Разработка дизайн-системы</li>
-              <li>Взаимодействие с несколькими PM</li>
-              <li>Проверка гипотез на жизнеспособность</li>
-              <li>Работа с разными частями плейса</li>
-              <li>Выполнение по канбану</li>
-              <li>цифровка интервью</li>
-              <li>Выдвижение гипотез и работа с ними</li>
-              <li>Проверка гипотез на жизнеспособность</li>
-              <li>Разработка с Cutomer jorney map.</li>
-              <li>Разработка customer case</li>
-              <li>Разработка с Cutomer jorney map.</li>
-              <li>Создание документации</li>
+              <li>Task estimation</li>
+              <li>A/B testing</li>
+              <li>Scrum/Kanban basis</li>
+              <li>Interview script development</li>
+              <li>Forming and working on hypotheses</li>
+              <li>Interview digitization</li>
+              <li>UI kit development</li>
+              <li>Transcribation</li>
+              <li>Research wall archetype identification</li>
+              <li>Design system development</li>
+              <li>Interaction with multiple project managers</li>
+              <li>Testing hypotheses' viability</li>
+              <li>Working with different marketplace areas</li>
+              <li>Customer journey map development</li>
             </ul>
           </CardBottom>
         </div>
@@ -63,29 +55,28 @@ export const WorkExperience: React.FC = () => {
           <CardTop
             workTitle="UX/UI Designer @ indevlab"
             time="🗓 12/01/19   — 01/10/20"
-            description="За время сотрудничества с IDL компаниями Kievstar, LG, Parimatch, Dato Batono, Работал над приложением DoctorOnline, а так же проектировал сервис по оплате коммунальных платежей, начиная от лендинга и заканчивая админ панелью."
+            description="Whilst cooperating with IDL I've been working with Kyivstar, LG, Parimatch, Dato Batono. Took part in DoctorOnline app development and designed house bills payment system from landing to admin panel"
             logoImg={indevLogo}
             url="https://indevlab.com/"
           />
 
           <CardBottom>
-            <p className={styles.listTitle}>Задачи</p>
+            <p className={styles.listTitle}>Assignments</p>
             <ul className={styles.list}>
-              <li>Аудит UI/UX </li>
-              <li>Дизайн UI/UX [ web/app ]</li>
-              <li>Базовая работа с аналитикой</li>
-              <li>Взаимодействие с разработкой</li>
-              <li>Взаимодействие с маркетингом</li>
-              <li>Создание UI kit</li>
-              <li>Проработка блок-схем</li>
-              <li>Просчеты проектов </li>
-              <li>Прототипирование </li>
-              <li>Дизайн рекламной продукции</li>
-              <li>Улучшение готовых продуктов</li>
-              <li>Проверка дизайна</li>
-              <li>Улучшение продукта в разработке</li>
-              <li>Улучшение продукта в разработке</li>
-              <li>Взаимодействие с несколькими PM</li>
+              <li>UI/UX audit</li>
+              <li>UI/UX design [web/app]</li>
+              <li>Basic analytics interaction</li>
+              <li>Interaction with developers</li>
+              <li>Interaction with marketing department</li>
+              <li>UI kit creation</li>
+              <li>Framework design</li>
+              <li>Project estimation</li>
+              <li>Prototyping</li>
+              <li>Design of marketing materials</li>
+              <li>Readymade products improvement</li>
+              <li>Design QA</li>
+              <li>Improving the products on the development stage</li>
+              <li>Interaction with multiple project managers simultaneously</li>
             </ul>
           </CardBottom>
         </div>
@@ -94,29 +85,30 @@ export const WorkExperience: React.FC = () => {
           <CardTop
             workTitle="JuniorUX/UI Designer @true-ag"
             time="🗓 03/11/17   — 09/01/19  "
-            description="За время работы поработал компаниями Bosh, именитым кинофестивалем “Молодість 48” SkyMall а также поработал с Makita, Must Have."
+            description="Had a chance to work with Bosh, Skymall, Makita and Must Have as well
+as to work on the famous movie festival Molodist-48"
             logoImg={trueLogo}
             url="https://true-ag.com/"
           />
 
           <CardBottom>
-            <p className={styles.listTitle}>Задачи</p>
+            <p className={styles.listTitle}>Assignments</p>
             <ul className={styles.list}>
-              <li>Отрисовка баннеров</li>
-              <li>Встречный брифинг клиентов</li>
-              <li>Разработка коцептов и ранних драфтов</li>
-              <li>Прототипирование и тестирование на пользователях</li>
-              <li>Разработка сайтов</li>
-              <li>Разработка интернет-магазинов</li>
-              <li>Разработка корп.сайтов</li>
-              <li>Просчеты проектов </li>
-              <li>Прототипирование </li>
-              <li>Обсуждение гипотез, работа в команде</li>
-              <li>Ревью дизайна и улучшение</li>
-              <li>Разработка брендбуков</li>
-              <li>Поддержка сайтов</li>
-              <li>Улучшение продукта в разработке</li>
-              <li>Поиск оптимального решения</li>
+              <li>UI\UX audit</li>
+              <li>Сreate banner</li>
+              <li>РWork on the composition and components</li>
+              <li>Interaction with developers</li>
+              <li>Interaction with marketing department</li>
+              <li>Creation of the UI kit</li>
+              <li>Framework development</li>
+              <li>Project estimation</li>
+              <li>Prototyping</li>
+              <li>Marketing materials design</li>
+              <li>Polygraphy materials and banner creation</li>
+              <li>Design QA</li>
+              <li>Ideas protection</li>
+              <li>Reasonable and thoughtful decision-making</li>
+              <li>Interaction with multiple project managers simultaneously</li>
             </ul>
           </CardBottom>
         </div>

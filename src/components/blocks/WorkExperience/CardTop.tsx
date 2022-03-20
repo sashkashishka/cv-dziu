@@ -39,7 +39,7 @@ export const CardTop: React.FC<iCardTopProps> = ({
           variant="white"
           className={styles.button}
         >
-          На сайт
+          Go web
         </Button>
       </a>
     </div>

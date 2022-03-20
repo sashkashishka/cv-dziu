@@ -47,7 +47,7 @@
   }
 
   .list {
-    columns: 3;
-    column-gap: 112px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

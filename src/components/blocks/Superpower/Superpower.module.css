@@ -7,12 +7,12 @@
 .superpower::before,
 .superpower::after {
   position: absolute;
-  content: '';
+  content: "";
   display: none;
   width: 686px;
   height: 686px;
   top: 50%;
-  background: linear-gradient(180deg, #DB04DF 0%, #04C5DF 100%);
+  background: linear-gradient(180deg, #db04df 0%, #04c5df 100%);
   filter: blur(700px);
   border-radius: 9000px;
   z-index: -1;
@@ -47,14 +47,13 @@
   letter-spacing: 0.02em;
 }
 
-
 .list li {
   margin-bottom: 16px;
   font-weight: 400;
 }
 
 .list li::before {
-  content: '•';
+  content: "•";
   display: inline-block;
   margin-right: 6px;
 }
@@ -62,8 +61,7 @@
 @media all and (min-width: 1024px) {
   .superpower {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 177px;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 144px;
   }
 
@@ -75,5 +73,10 @@
   .list {
     columns: 2;
     column-gap: 32px;
+  }
+
+  .content {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }

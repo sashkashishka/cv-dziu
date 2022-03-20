@@ -31,8 +31,6 @@
   border-radius: 6.73831px;
 }
 
-
-
 .title {
   margin-bottom: 4px;
   font-size: 18px;
@@ -48,7 +46,6 @@
 .buttonLink {
   display: block;
   width: 100%;
-  max-width: 310px;
 }
 
 .button {
@@ -107,6 +104,10 @@
     height: 72px;
     margin-bottom: 0;
     margin-right: 14px;
+  }
+
+  .buttonLink {
+    max-width: 310px;
   }
 
   .infoBlock {

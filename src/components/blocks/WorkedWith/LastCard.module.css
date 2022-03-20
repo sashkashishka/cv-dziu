@@ -17,6 +17,7 @@
   height: 80px;
   border-radius: 16px;
   border: 2px solid white;
+  background-color: white;
   transition: border 0.3s ease;
 }
 

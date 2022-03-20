@@ -21,8 +21,8 @@ export const MainBlock: React.FC = () => {
 
         <div className={styles.navTopLinkContainer}>
           <a href="https://t.me/Alex_SayDz">Telegram</a>
-          <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedId</a>
-          <a href="mailto:randomtext95@gmail.com">Почта</a>
+          <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>
+          <a href="mailto:randomtext95@gmail.com">Mail</a>
         </div>
 
         <a href="tel:+380 (73) 101-72-56">+380 (73) 101-72-56</a>
@@ -31,13 +31,13 @@ export const MainBlock: React.FC = () => {
       <section className={cn('section', styles.main)}>
         <div className={styles.mainLeft}>
           <p className={cn(styles.mainTitle, styles.mainTitleDesktop)}>
-            Я продуктовый дизайнер с полезным опытом
+            I am a product designer with a useful experience
           </p>
           <p className={cn(styles.mainTitle, styles.mainTitleMobile)}>
-            Я продуктовый дизайнер.
+            I am a product designer
           </p>
           <p>
-            Валидирую гипотезы и превращаю их в деньги.
+            Validating hypotheses and turning them into money
           </p>
           <DownloadCV
             className={styles.mainLeftButton}
@@ -48,7 +48,7 @@ export const MainBlock: React.FC = () => {
           <div className={styles.sliderContainer}>
             <Card
               title="Профиль Behance"
-              url="behance.net/randomtext2cb5"
+              url="be.net/randomtext2cb5"
               icon={behanceIcon}
               hasAwards
             />
@@ -61,7 +61,7 @@ export const MainBlock: React.FC = () => {
           </div>
 
           <div className={styles.sliderCaption}>
-            В кейсах детально расписан процесс.
+            Case studies include detailed process description
           </div>
 
         </div>
@@ -70,7 +70,7 @@ export const MainBlock: React.FC = () => {
       <nav className={cn('section', styles.navBottom)}>
         <a href="https://t.me/Alex_SayDz">Telegram</a>
         <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>
-        <a href="mailto:randomtext95@gmail.com">Почта</a>
+        <a href="mailto:randomtext95@gmail.com">Mail</a>
       </nav>
     </div>
   );

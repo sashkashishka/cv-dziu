@@ -62,7 +62,7 @@ export const Card: React.FC<iCardProps> = ({
           variant="white"
           className={styles.button}
         >
-          Смотреть
+          Watch
         </Button>
       </a>
     </div>

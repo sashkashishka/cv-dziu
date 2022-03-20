@@ -14,10 +14,10 @@ export const WorkedWith: React.FC = () => {
   return (
     <div className={cn('section', styles.workedWith)}>
       <h2 className={styles.title}>
-        С кем я работал?
+        With whom I worked
       </h2>
       <p className={styles.subtitle}>
-        Компании с которыми я сотрудничал и выполнял заказы.
+        Companies I collaborated with
       </p>
 
       <div className={styles.cardContainer}>
@@ -33,8 +33,8 @@ export const WorkedWith: React.FC = () => {
         </div>
 
         <LastCard
-          title="Это не всё"
-          subtitle="Добавил самые основные проекты, с которыми я работал. При встрече, смогу рассказать более детально"
+          title="There's more"
+          subtitle="I've mentioned the main/largest projects I worked on. We may discuss further upon meeting"
         />
           
 

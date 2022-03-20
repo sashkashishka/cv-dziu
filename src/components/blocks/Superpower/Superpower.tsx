@@ -7,42 +7,43 @@ export const Superpower: React.FC = () => {
   return (
     <div className={cn('section', styles.superpower)}>
       <h2 className={styles.title}>
-        Cуперсила
+        Superpowers
       </h2>
 
-      <div>
+      <div className={styles.content}>
         <div className={styles.skillBlock}>
-          <p className={styles.listTitle}>Хард</p>
+          <p className={styles.listTitle}>Hard</p>
           <ul className={styles.list}>
-            <li>Взаимодействие с UX аналитикой</li>
-            <li>Разработка CJM/Блок-схем</li>
-            <li>Юзабилити и A / B-тестирование</li>
-            <li>Создание roadmap</li>
-            <li>Вайрфрейминг и прототипирование</li>
-            <li>Проведение исследований</li>
-            <li>Создание и поддержание документации</li>
-            <li>Дизайн интерфейса web/app</li>
-            <li>Разработка UIkit/Дизайн системы</li>
-            <li>Интервью с пользователями</li>
+            <li> UX analytics interaction</li>
+            <li>CJM/Flowchart development</li>
+            <li>Scrum/Kanban</li>
+            <li>Roadmap creation</li>
+            <li>Warframing and prototyping</li>
+            <li>Doing research</li>
+            <li>Documents development and maintenance</li>
+            <li>Web/app interface design</li>
+            <li>UIkit/Design system development</li>
+            <li>User interviews</li>
           </ul>
         </div>
 
         <div className={styles.skillBlock}>
-          <p className={styles.listTitle}>Софт</p>
+          <p className={styles.listTitle}>Soft</p>
           <ul className={styles.list}>
-            <li>Гибкость и изменение стратегии при форс-мажорных обстоятельствах</li>
-            <li>Ответственность и доведение работы до логического конца</li>
-            <li>Пристальное внимание к деталям и мелочам</li>
-            <li>Критическое мышление</li>
-            <li>Полный анализ сути вопроса и поиск оптимального к задаче решения</li>
-            <li>Планирование и организация рабочего времени (time management)</li>
-            <li>Обоснованое и осмысленное принятие продуктовых решений</li>
-            <li>Продуктовая стратегия</li>
+            <li>Flexibility and restrateging in case of force-majeur</li>
+            <li>Full case study and resolving</li>
+            <li>Responsibility and purposefulness</li>
+            <li>Attention to details</li>
+            <li>Critical thinking</li>
+            <li> Full case study and resolving</li>
+            <li>Self-management and time management</li>
+            <li>Reasonable and thoughtful decision-making</li>
+            
           </ul>
         </div>
 
         <div className={styles.skillBlock}>
-          <p className={styles.listTitle}>Инструменты работы</p>
+          <p className={styles.listTitle}>Software</p>
           <ul className={styles.list}>
             <li>Figma</li>
             <li>Sketch</li>
@@ -59,7 +60,7 @@ export const Superpower: React.FC = () => {
             <li>Balsamiq Mockup</li>
             <li>Principle</li>
             <li>Proto Pie</li>
-            <li>Jira & Confluence</li>
+            <li>Jira/Confluence</li>
           </ul>
         </div>
 
