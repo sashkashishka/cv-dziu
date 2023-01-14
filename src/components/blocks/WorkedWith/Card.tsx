@@ -1,9 +1,10 @@
 import * as React from 'react';
 import cn from 'classnames';
 
-import { Button } from '../../Button';
+import starIcon from '../../../icons/star.svg';
 
 import styles from './Card.module.css';
+import s from './VideoCard.module.css';
 
 interface iCardProps {
   title: string;
@@ -11,6 +12,8 @@ interface iCardProps {
   logoImg: string;
   phoneImg: string;
   url: string;
+  bg: string;
+  firstJob?: boolean;
 }
 
 export const Card: React.FC<iCardProps> = ({
@@ -19,46 +22,60 @@ export const Card: React.FC<iCardProps> = ({
   logoImg,
   phoneImg,
   url,
+  bg,
+  firstJob,
 }) => {
   return (
-    <div className={styles.card}>
-      <div className={cn(styles.elipse, styles.blue)}/>
-      <div className={cn(styles.elipse, styles.red)}/>
-
-      <div className={styles.left}>
-        <div className={styles.infoBlock}>
-          <img
-            className={styles.logoImg}
-            src={logoImg}
-            alt={title} 
-          />
-
-          <div>
-            <p className={styles.title}>{title}</p>
-            <p className={styles.subtitle}>{subtitle}</p>
+    <div
+      className={cn(
+        styles.card,
+        firstJob && styles.cardFirstJob,
+      )}
+      style={{
+        '--card-bg': `url(${bg})`,
+      } as React.CSSProperties}
+    >
+      {
+        firstJob && (
+          <div className={cn(s.videoCV, styles.firstJob)}>
+            <img src={starIcon} alt="star" />
+            first job
           </div>
+        )
+      }
+
+      <img
+        className={cn(
+          styles.phoneImg,
+          firstJob && styles.phoneImgFirstJob,
+        )}
+        src={phoneImg}
+        alt={title}
+      />
+
+      <div className={styles.infoBlock}>
+        <div
+          className={cn(styles.logoImg)}
+        >
+          <img
+            src={logoImg}
+            alt={title}
+          />
         </div>
+
+        <div className={styles.textContainer}>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.subtitle}>{subtitle}</p>
+        </div>
+
         <a
           className={styles.buttonLink}
           href={url}
           target="_blank"
           rel="noreferrer"
         >
-          <Button
-            type="button"
-            variant="white"
-            className={styles.button}
-          >
-            Watch
-          </Button>
         </a>
       </div>
-
-      <img
-        className={styles.phoneImg}
-        src={phoneImg}
-        alt={title} 
-      />
     </div>
   );
 }

@@ -1,9 +1,8 @@
 import * as React from 'react';
 import cn from 'classnames';
 
-// import { Button } from '../../Button';
+import shadowArt from '../../../images/shadow-art/last-card.png';
 
-import more19Logo from '../../../images/logo/more-19.png';
 import somethingLogo from '../../../images/logo/something.png';
 import indevLogo from '../../../images/logo/indev.png';
 import eLogo from '../../../images/logo/e.png';
@@ -11,8 +10,8 @@ import domLogo from '../../../images/logo/dom.png';
 import interkassaLogo from '../../../images/logo/interkassa.png';
 import malvinaLogo from '../../../images/logo/malvina.png';
 
-import styles from './Card.module.css';
-import lastStyl from './LastCard.module.css';
+import styles from './LastCard.module.css';
+import cs from './Card.module.css';
 
 const logos = [
   {
@@ -21,64 +20,69 @@ const logos = [
   },
   {
     logoImg: indevLogo,
-        url: 'https://indevlab.com/',
+    url: 'https://indevlab.com/',
   },
   {
     logoImg: eLogo,
-        url: 'https://www.eve.ua/',
+    url: 'https://www.eve.ua/',
   },
   {
     logoImg: domLogo,
-        url: '#',
+    url: '#',
   },
   {
     logoImg: interkassaLogo,
-        url: '#',
+    url: '#',
   },
   {
     logoImg: malvinaLogo,
-        url: 'https://malvinabeauty.ru/',
+    url: 'https://malvinabeauty.ru/',
   },
 ];
 
-interface iLastCardProps {
-  title: string;
-  subtitle: string;
-}
-
-export const LastCard: React.FC<iLastCardProps> = ({
-  title,
-  subtitle,
-}) => {
+export const LastCard: React.FC = () => {
   return (
-    <div className={cn(styles.card, lastStyl.lastCard)}>
-      <div className={cn(styles.elipse, styles.blue)}/>
-      <div className={cn(styles.elipse, styles.red)}/>
-
-      <div className={styles.left}>
-        <div className={styles.infoBlock}>
-          <img
-            className={styles.logoImg}
-            src={more19Logo}
-            alt={title} 
-          />
-
-          <div>
-            <p className={styles.title}>{title}</p>
-            <p className={styles.subtitle}>{subtitle}</p>
-          </div>
+    <div
+      className={cn(styles.lastCard)}
+    >
+      <div className={cn(cs.infoBlock, styles.infoBlock)}>
+        <div className={cs.textContainer}>
+          <p className={cs.title}>There's more</p>
+          <p className={cs.subtitle}>I've mentioned the main/largest projects I worked on. We may discuss further upon meetingin Ukraine</p>
         </div>
+
+        <a
+          className={cs.buttonLink}
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+        >
+        </a>
+      </div>
+
+      <div className={styles.desktopTexContainer}>
+        <p className={styles.title}>There's more</p>
+        <p className={styles.subtitle}>I've mentioned the main/largest projects I worked on. We may discuss further upon meetingin Ukraine</p>
       </div>
 
       <div
-        className={lastStyl.right}
+        className={cn(styles.artShadow)}
+      >
+        <img src={shadowArt} alt="" />
+      </div>
+
+      <div
+        className={styles.logos}
       >
         {
-          logos.map(({ logoImg, url
-}) => (
-            <a key={logoImg} href={url} target="_blank">
+          logos.map(({ logoImg, url }) => (
+            <a
+              key={logoImg}
+              className={cn(styles.logoImg)}
+              href={url}
+              target="_blank"
+            >
               <img
-                className={cn(lastStyl.logoImg)}
                 src={logoImg}
               />
             </a>

@@ -2,43 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  padding: 12px 48px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
+  height: 56px;
+  padding: 16px 20px;
+  font-weight: 400;
   font-family: inherit;
-  border-radius: 8px;
+  border-radius: 16px;
   outline: 0;
   transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.white {
-  background: white;
-  color: #7b04df;
-  border: 2px solid white;
+.purple,
+.purpleRound {
+  color: var(--color-white);
+  background: var(--color-purple-500);
+  border: none;
 }
 
-.white:hover {
-  border: 2px solid #c785ff;
+.purple:hover,
+.purpleRound:hover {
+  background: var(--color-purple-300);
+  cursor: pointer;
 }
 
-.white:active {
-  border: 2px solid #c785ff;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
+.purple:disabled,
+.purpleRound:disabled {
+  color: var(--color-grey-black-30);
+  background: var(--color-grey-black-10);
 }
 
-.purple {
-  color: white;
-  background: #7b04df;
-  border: 2px solid #7b04df;
-}
-
-.purple:hover {
-  border: 2px solid #c785ff;
-}
-
-.purple:active {
-  border: 2px solid #c785ff;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.18);
+.purpleRound {
+  border-radius: 66px;
 }

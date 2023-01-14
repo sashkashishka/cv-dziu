@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="638" fill="none">
+  <g clip-path="url(#a)">
+    <rect width="640" height="638" fill="#0C2133" fill-opacity=".11" rx="60"/>
+    <g filter="url(#b)">
+      <path fill="url(#c)" fill-rule="evenodd" d="M435.64 1093C138.695 1093-62 815.046-62 518.116-62 204.252 121.762-113 435.64-113 779.88-113 1051 173.891 1051 518.116 1051 846.975 764.514 1093 435.64 1093Z" clip-rule="evenodd"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="c" x1="216.282" x2="460.745" y1="379.55" y2="-87.215" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1CC061"/>
+      <stop offset="1" stop-color="#11E36A"/>
+    </linearGradient>
+    <clipPath id="a">
+      <rect width="640" height="638" fill="#fff" rx="60"/>
+    </clipPath>
+    <filter id="b" width="1513" height="1606" x="-262" y="-313" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_9_5584" stdDeviation="100"/>
+    </filter>
+  </defs>
+</svg>

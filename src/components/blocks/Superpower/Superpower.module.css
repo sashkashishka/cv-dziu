@@ -1,55 +1,39 @@
 .superpower {
   position: relative;
   padding: 0 16px;
-  margin-top: 48px;
-}
-
-.superpower::before,
-.superpower::after {
-  position: absolute;
-  content: "";
-  display: none;
-  width: 686px;
-  height: 686px;
-  top: 50%;
-  background: linear-gradient(180deg, #db04df 0%, #04c5df 100%);
-  filter: blur(700px);
-  border-radius: 9000px;
-  z-index: -1;
-}
-
-.superpower::before {
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-
-.superpower::after {
-  right: 0;
-  transform: translate(30%, -30%);
+  margin-top: 90px;
 }
 
 .title {
-  font-size: 52px;
-  line-height: 66px;
-  font-weight: bold;
-  margin-bottom: 24px;
-  text-align: center;
+  margin-bottom: 48px;
+  font-size: 24px;
+  line-height: 68px;
+  font-weight: 950;
+  letter-spacing: -0.01em;
 }
 
 .skillBlock {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .listTitle {
   margin-bottom: 24px;
   font-size: 18px;
-  line-height: 27px;
-  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.listTitle::first-letter {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 .list li {
   margin-bottom: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 .list li::before {
@@ -58,21 +42,40 @@
   margin-right: 6px;
 }
 
+
 @media all and (min-width: 1024px) {
   .superpower {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 144px;
+    margin-top: 120px;
   }
 
-  .superpower::before,
-  .superpower::after {
-    display: block;
+  .title {
+    margin-bottom: 80px;
+    font-size: 56px;
+  }
+
+  .skillBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
   }
 
   .list {
     columns: 2;
     column-gap: 32px;
+  }
+
+  .oneCol {
+    columns: 1;
+  }
+
+  .listTitle {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .listTitle::first-letter {
+    font-size: 38px;
+    line-height: 38px;
   }
 
   .content {

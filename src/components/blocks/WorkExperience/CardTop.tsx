@@ -1,6 +1,5 @@
 import * as React from 'react';
-
-import { Button } from '../../Button';
+import cn from 'classnames';
 
 import styles from './CardTop.module.css';
 
@@ -9,7 +8,8 @@ interface iCardTopProps {
   workTitle: string;
   time: string;
   description: string;
-  url: string;
+  bg: string;
+  artShadow: string;
 }
 
 export const CardTop: React.FC<iCardTopProps> = ({
@@ -17,31 +17,41 @@ export const CardTop: React.FC<iCardTopProps> = ({
   workTitle,
   time,
   description,
-  url,
+  bg,
+  artShadow,
 }) => {
   return (
-    <div className={styles.cardTop}>
-      <img
-        className={styles.logoImg}
-        src={logoImg}
-        alt=""
-      />
+    <div
+      className={styles.cardTop}
+    >
+      <div
+        className={cn(styles.bgShapeContainer)}
+      >
+        <div
+          className={cn(styles.bgShapeBlur)}
+        />
+        <img src={bg} alt="" />
+      </div>
 
-      <div className={styles.description}>
-        <p className={styles.workTitle}>{workTitle}</p>
-        <p className={styles.time}>{time}</p>
+      <div className={styles.innerCard}>
+        <div className={styles.logoImg}>
+          <img
+            src={logoImg}
+            alt=""
+          />
+        </div>
+
+        <div className={styles.workInfo}>
+          <p className={styles.workTitle}>{workTitle}</p>
+          <p className={styles.time}>{time}</p>
+        </div>
+
         <p className={styles.description}>{description}</p>
       </div>
 
-      <a className={styles.buttonLink} href={url} target="_blank">
-        <Button
-          type="button"
-          variant="white"
-          className={styles.button}
-        >
-          Go web
-        </Button>
-      </a>
+      <div className={cn(styles.artShadow)}>
+        <img src={artShadow} alt="" />
+      </div>
     </div>
   );
 }

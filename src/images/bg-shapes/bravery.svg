@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="504" fill="none">
+  <g clip-path="url(#a)">
+    <rect width="640" height="504" fill="#0C2133" fill-opacity=".11" rx="60"/>
+    <g fill-rule="evenodd" clip-rule="evenodd" filter="url(#b)">
+      <path fill="url(#c)" d="M609.51 104.96c-5.461 54.256 20.558 114.688-8.937 160.553-29.473 45.832-92.747 51.979-142.305 74.635-44.901 20.528-87.97 40.235-135.792 52.504-60.88 15.619-133.67 68.214-183.015 29.287-52.541-41.448-1.655-133.704-27.562-195.407C90.765 176.198 22.432 157.135 6.37 104.96-11.063 48.33-.988-14.092 20.87-69.166c23.621-59.52 52.499-133.448 114.269-150.34 65.174-17.824 119.806 65.668 187.338 67.858 64.033 2.076 118.214-71.122 180.453-55.933 61.532 15.017 111.519 72.23 131.961 132.176 19.936 58.461-19.194 118.91-25.38 180.365Z"/>
+      <path fill="url(#d)" d="M609.51 104.96c-5.461 54.256 20.558 114.688-8.937 160.553-29.473 45.832-92.747 51.979-142.305 74.635-44.901 20.528-87.97 40.235-135.792 52.504-60.88 15.619-133.67 68.214-183.015 29.287-52.541-41.448-1.655-133.704-27.562-195.407C90.765 176.198 22.432 157.135 6.37 104.96-11.063 48.33-.988-14.092 20.87-69.166c23.621-59.52 52.499-133.448 114.269-150.34 65.174-17.824 119.806 65.668 187.338 67.858 64.033 2.076 118.214-71.122 180.453-55.933 61.532 15.017 111.519 72.23 131.961 132.176 19.936 58.461-19.194 118.91-25.38 180.365Z"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="c" x1="348" x2="144.675" y1="-211.5" y2="431.311" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#006CFF"/>
+      <stop offset=".99" stop-color="#0663E0"/>
+    </linearGradient>
+    <linearGradient id="d" x1="319" x2="319" y1="436" y2="-222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="gold"/>
+      <stop offset="1" stop-color="gold" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="a">
+      <rect width="640" height="504" fill="#fff" rx="60"/>
+    </clipPath>
+    <filter id="b" width="1079" height="1094" x="-220.5" y="-440" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_9_5692" stdDeviation="109"/>
+    </filter>
+  </defs>
+</svg>

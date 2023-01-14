@@ -4,14 +4,18 @@
   grid-template-rows: repeat(2, auto);
   align-items: center;
   min-height: 240px;
-  background: linear-gradient(
-    111.49deg,
-    rgba(255, 255, 255, 0.4) -8.95%,
-    rgba(255, 255, 255, 0.09) 114%
-  );
-  backdrop-filter: blur(100px);
-  border-radius: 25px;
-  overflow: hidden;
+  padding: 80px 24px 178px;
+  margin-bottom: 52px;
+  background: var(--card-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+.cardFirstJob {
+  grid-column: 1 / 1;
+  grid-row: 1 / span 2;
 }
 
 .left {
@@ -19,80 +23,122 @@
 }
 
 .infoBlock {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  bottom: -52px;
+  right: -8px;
+  left: -8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 8px;
+  justify-items: center;
+  padding: 24px 22px;
+  background: rgba(59, 69, 78, 0.5);
+  backdrop-filter: blur(40px);
+  border-radius: 32px;
 }
 
 .logoImg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 16px;
+  position: relative;
+  width: 56px;
+  height: 56px;
   background: white;
-  border-radius: 6.73831px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12), 0px 2px 5px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.logoImg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.logoImg::before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: black;
+  filter: blur(28px);
+  bottom: -4px;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.textContainer {
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .title {
   margin-bottom: 4px;
+  color: white;
+  font-weight: 900;
   font-size: 18px;
   line-height: 150%;
-  font-weight: bold;
+}
+
+.subtitle {
+  color: rgba(238, 244, 255, 0.67);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .phoneImg {
+  width: 218px;
+  height: 192px;
   justify-self: center;
   align-self: end;
+  object-fit: cover;
+  object-position: top;
 }
 
 .buttonLink {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 56px;
+  background: rgba(59, 69, 78, 0.5);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
 }
 
-.button {
-  width: 100%;
-  margin-top: 14px;
+.buttonLink::before {
+  content: url('../../../icons/eye.svg');
+  width: 24px;
+  height: 24px;
 }
 
-.elipse {
+.buttonLink:hover {
+  background: rgba(59, 69, 78, 0.8);
+}
+
+.firstJob {
   position: absolute;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.blue {
-  width: 168.66px;
-  height: 219px;
-  left: -50px;
-  top: -24px;
-  background: linear-gradient(
-    90deg,
-    rgba(137, 247, 254, 0.5) 0%,
-    rgba(102, 166, 255, 0.5) 100%
-  );
-  filter: blur(36px);
-  transform: rotate(-20.45deg);
-}
-
-.red {
-  width: 168.66px;
-  height: 219px;
-  right: -24px;
-  bottom: 24px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 154, 158, 0.5) 0%,
-    rgba(250, 208, 196, 0.5) 99%,
-    rgba(250, 208, 196, 0.5) 100%
-  );
-  filter: blur(36px);
-  transform: rotate(-20.45deg);
+  top: 0;
+  left: 50%;
+  margin-bottom: 0;
+  transform: translateX(-50%);
 }
 
 @media all and (min-width: 768px) {
   .card {
     grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
     grid-column-gap: 24px;
+    align-content: end;
+    padding: 32px 40px 24px;
+    margin-bottom: 0;
+  }
+
+  .cardFirstJob {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    padding: 80px 40px 24px;
   }
 
   .left {
@@ -107,20 +153,31 @@
   }
 
   .buttonLink {
-    max-width: 310px;
+    width: 56px;
   }
 
-  .infoBlock {
-    display: flex;
-    flex-direction: row;
+  .firstJob {
+    margin-top: 40px;
   }
 
   .phoneImg {
-    margin-right: 32px;
+    height: 131px;
   }
 
-  .red {
-    bottom: -48px;
-    right: 112px;
+  .phoneImgFirstJob {
+    height: 337px;
+  }
+
+  .infoBlock {
+    position: static;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 16px;
+    align-items: center;
+    padding: 24px 32px;
+  }
+
+  .textContainer {
+    justify-self: start;
+    text-align: start;
   }
 }

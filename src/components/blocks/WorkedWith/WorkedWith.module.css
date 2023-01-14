@@ -1,30 +1,110 @@
 .workedWith {
   position: relative;
-  margin-top: 88px;
-  padding: 0 16px;
+  margin-top: 90px;
 }
 
-.workedWith::before {
+.bgShapeContainer {
   position: absolute;
-  content: '';
-  display: none;
-  width: 602.17px;
-  height: 602.17px;
-  background: linear-gradient(90deg, rgba(184, 203, 184, 0.8) 0%, rgba(184, 203, 184, 0.8) 0%, rgba(180, 101, 218, 0.8) 0%, rgba(207, 108, 201, 0.8) 33%, rgba(238, 96, 156, 0.8) 66%, rgba(238, 96, 156, 0.8) 100%);
-  filter: blur(700px);
-  border-radius: 9000px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
-.title {
-  font-size: 52px;
-  line-height: 66px;
-  font-weight: bold;
-  margin-bottom: 24px;
+.bgShapeBlur {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(173.056px);
+  z-index: 1;
+}
+
+.bhShape1 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bhShape2 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-20%);
+}
+
+.acquanitedBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'title' 'videoCard' 'cvBtn';
+  grid-gap: 32px;
+  padding: 16px 24px;
+}
+
+.acquanitedBlock :global(.videoCard) {
+  grid-area: videoCard;
+  justify-self: center;
+  align-self: center;
+}
+
+.titleContainer {
+  grid-area: title;
+}
+
+.cvBtn {
+  margin-top: 8px;
+  grid-area: cvBtn;
+}
+
+.floatIcons {
+  position: relative;
+  display: none;
+  min-height: 430px;
+  grid-area: floatIcons;
+}
+
+.floatIcon {
+  position: absolute;
+}
+
+:global(.fi) {
+  bottom: 40px;
+  left: 0;
+}
+
+:global(.fr) {
+  bottom: 0;
+  right: 10%;
+}
+
+:global(.da) {
+  top: 66px;
+  right: 40%;
+}
+
+:global(.ga) {
+  top: 48px;
+  right: 0;
+}
+
+.experienceSection {
+  margin-top: 90px;
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+.experienceTitle,
+.experienceSubtitle {
+  text-align: center;
 }
 
 .cardContainer {
   margin-top: 48px;
+  padding: 0 24px;
 }
 
 .grid {
@@ -36,16 +116,34 @@
 
 @media all and (min-width: 768px) {
   .workedWith {
-    margin-top: 226px;
-    padding: 0 16px;
-  }
-
-  .title,
-  .subtitle {
-    text-align: center;
+    margin-top: 0;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+  }
+
+  .acquanitedBlock {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 'floatIcons videoCard'
+      'title videoCard'
+      'cvBtn videoCard';
+    grid-gap: 32px;
+    margin-top: 80px;
+  }
+
+  .floatIcons {
+    display: block;
+  }
+
+  .cvBtn {
+    margin-bottom: 40px;
+  }
+
+  .experienceSection {
+    margin-top: 190px;
+    margin-bottom: 48px;
   }
 }

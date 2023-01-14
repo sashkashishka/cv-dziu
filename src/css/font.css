@@ -1,30 +1,32 @@
 @font-face {
-    font-family: 'Google Sans';
-    src: local('Google Sans Bold'), local('GoogleSans-Bold'),
-        url('../font/GoogleSans-Bold.woff2') format('woff2'),
-        url('../font/GoogleSans-Bold.woff') format('woff'),
-        url('../font/GoogleSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Nexa';
+  src: url('../font/Nexa-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
 @font-face {
-    font-family: 'Google Sans';
-    src: local('Google Sans Medium'), local('GoogleSans-Medium'),
-        url('../font/GoogleSans-Medium.woff2') format('woff2'),
-        url('../font/GoogleSans-Medium.woff') format('woff'),
-        url('../font/GoogleSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Nexa';
+  src: url('../font/Nexa-ExtraBold.otf') format('opentype');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Google Sans';
-    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
-        url('../font/GoogleSans-Regular.woff2') format('woff2'),
-        url('../font/GoogleSans-Regular.woff') format('woff'),
-        url('../font/GoogleSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Nexa';
+  src: url('../font/Nexa-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../font/Nexa-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }

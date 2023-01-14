@@ -4,7 +4,7 @@ import cn from 'classnames';
 import styles from './Button.module.css';
 
 interface iButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'purple' | 'white';
+  variant?: 'purple' | 'purple-round';
 }
 
 export const Button: React.FC<iButtonProps> = ({
@@ -17,7 +17,7 @@ export const Button: React.FC<iButtonProps> = ({
       styles.button,
       variant === 'purple'
         ? styles.purple
-        : styles.white,
+        : styles.purpleRound,
       className,
     )}
     {...props}
