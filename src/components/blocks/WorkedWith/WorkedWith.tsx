@@ -23,7 +23,7 @@ export const WorkedWith: React.FC = () => {
     <div className={cn(styles.workedWith)}>
       <div className={cn(styles.bgShapeContainer)}>
         <div
-          className={cn(styles.bgShapeBlur)}
+          className={cn(styles.bgShapeBlur, 'gpu')}
         />
         <BgShapeColor
           gradientId="work-with-shape-1"

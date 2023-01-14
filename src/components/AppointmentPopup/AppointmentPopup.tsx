@@ -31,7 +31,7 @@ export const AppointmentPopup: React.FC = () => {
               className={cn(styles.bg)}
             >
               <div
-                className={cn(styles.bgBlur)}
+                className={cn(styles.bgBlur, 'gpu')}
               />
 
               <img src={mainBg} alt="" />

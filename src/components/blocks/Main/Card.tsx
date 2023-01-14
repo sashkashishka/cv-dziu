@@ -91,6 +91,7 @@ export const Card: React.FC<iCardProps> = ({
         className={cn(styles.shadowArtContainer)}
       >
         <img
+          className="gpu"
           src={
             type === 'behance'
               ? shadowArtBehance

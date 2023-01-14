@@ -53,7 +53,7 @@ export const Card: React.FC<iCardProps> = ({
         alt={title}
       />
 
-      <div className={styles.infoBlock}>
+      <div className={cn(styles.infoBlock, 'gpu')}>
         <div
           className={cn(styles.logoImg)}
         >
@@ -69,7 +69,7 @@ export const Card: React.FC<iCardProps> = ({
         </div>
 
         <a
-          className={styles.buttonLink}
+          className={cn(styles.buttonLink, 'gpu')}
           href={url}
           target="_blank"
           rel="noreferrer"

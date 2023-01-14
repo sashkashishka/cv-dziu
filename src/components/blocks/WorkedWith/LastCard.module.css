@@ -49,7 +49,10 @@
   bottom: -4px;
   z-index: 0;
   left: 50%;
-  transform: translateX(-50%);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translateX(-50%) translate3d(0,0,0);
+  transform: translateX(-50%) translateZ(0);
   z-index: 0;
 }
 

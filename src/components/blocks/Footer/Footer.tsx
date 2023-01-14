@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           className={cn(styles.bgContainer)}
         >
           <div
-            className={cn(styles.bgBlur)}
+            className={cn(styles.bgBlur, 'gpu')}
           />
 
           <img src={footerBg} alt="" />

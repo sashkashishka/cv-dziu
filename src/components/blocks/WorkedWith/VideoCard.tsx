@@ -10,7 +10,7 @@ import styles from './VideoCard.module.css';
 export const VideoCard: React.FC = () => {
   return (
     <div className={cn('videoCard', styles.videoCard)}>
-      <div className={cn(styles.videoCV)}>
+      <div className={cn(styles.videoCV, 'gpu')}>
         <img src={cameraIcon} alt="camera" />
         Video CV
       </div>
@@ -21,7 +21,7 @@ export const VideoCard: React.FC = () => {
         className={cn(styles.mainImage)}
       />
 
-      <div className={cn(styles.videoControls)}>
+      <div className={cn(styles.videoControls, 'gpu')}>
         <div>
           <p className={cn(styles.videoName)}>
             About me

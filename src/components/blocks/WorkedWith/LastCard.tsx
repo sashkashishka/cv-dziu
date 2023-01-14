@@ -68,7 +68,7 @@ export const LastCard: React.FC = () => {
       <div
         className={cn(styles.artShadow)}
       >
-        <img src={shadowArt} alt="" />
+        <img className="gpu" src={shadowArt} alt="" />
       </div>
 
       <div
