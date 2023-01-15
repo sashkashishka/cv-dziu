@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { Card } from './Card';
 
-import mainBg from '../../../images/bg-shapes/main.svg';
+import mainBg from '../../../images/bg-shapes/main.png';
 import textMask from '../../../images/text-bg/main.png'; 
 
 import behanceIcon from '../../../icons/behance.svg';
@@ -18,13 +18,8 @@ export const MainBlock: React.FC = () => {
         <div
           className={cn(styles.bgContainer)}
         >
-          <div
-            className={cn(styles.bgBlur, 'gpu')}
-          />
-
           <img src={mainBg} alt="" />
         </div>
-
 
         <nav className={cn('section', styles.navTop)}>
           <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>

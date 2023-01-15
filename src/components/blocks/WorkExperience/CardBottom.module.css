@@ -5,3 +5,9 @@
   background: rgba(12, 33, 51, 0.05);
   border-radius: 32px;
 }
+
+@media all and (min-width: 768px) {
+  .cardBottom {
+    height: 100%;
+  }
+}

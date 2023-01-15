@@ -4,8 +4,8 @@ import cn from 'classnames';
 import behanceBgCard from '../../../images/bg-shapes/main-behance-card.svg';
 import dribbleBgCard from '../../../images/bg-shapes/main-dribble-card.svg';
 
-import shadowArtBehance from '../../../images/shadow-art/behance.svg';
-import shadowArtDribble from '../../../images/shadow-art/dribble.svg';
+import shadowArtBehance from '../../../images/shadow-art/behance.png';
+import shadowArtDribble from '../../../images/shadow-art/dribble.png';
 
 import { Button } from '../../Button';
 

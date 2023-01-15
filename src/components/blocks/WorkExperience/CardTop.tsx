@@ -27,9 +27,6 @@ export const CardTop: React.FC<iCardTopProps> = ({
       <div
         className={cn(styles.bgShapeContainer)}
       >
-        <div
-          className={cn(styles.bgShapeBlur, 'gpu')}
-        />
         <img src={bg} alt="" />
       </div>
 
@@ -50,7 +47,7 @@ export const CardTop: React.FC<iCardTopProps> = ({
       </div>
 
       <div className={cn(styles.artShadow)}>
-        <img className="gpu" src={artShadow} alt="" />
+        <img src={artShadow} alt="" />
       </div>
     </div>
   );

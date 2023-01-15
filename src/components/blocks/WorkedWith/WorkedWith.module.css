@@ -1,6 +1,6 @@
 .workedWith {
   position: relative;
-  margin-top: 90px;
+  padding-top: 90px;
 }
 
 .bgShapeContainer {
@@ -18,8 +18,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(173.056px);
+  background-image: url('../../../images/bg-shapes/worked-with-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center top;
   z-index: 1;
 }
 
@@ -116,7 +117,12 @@
 
 @media all and (min-width: 768px) {
   .workedWith {
-    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .bgShapeBlur {
+    background-image: url('../../../images/bg-shapes/worked-with.png');
+    background-position: center top -40%;
   }
 
   .grid {
@@ -131,7 +137,7 @@
       'title videoCard'
       'cvBtn videoCard';
     grid-gap: 32px;
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .floatIcons {
@@ -139,11 +145,20 @@
   }
 
   .cvBtn {
+    justify-self: start;
+    width: 100%;
+    max-width: 334px;
+    margin-top: 0;
     margin-bottom: 40px;
   }
 
   .experienceSection {
     margin-top: 190px;
     margin-bottom: 48px;
+  }
+
+  .title {
+    max-width: 400px;
+    margin-bottom: 16px;
   }
 }

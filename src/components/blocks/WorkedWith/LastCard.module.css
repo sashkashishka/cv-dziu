@@ -4,7 +4,7 @@
   background: url('../../../images/bg-shapes/last-card-mobile.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 110% 110%;
   border-radius: 40px;
 }
 
@@ -14,6 +14,7 @@
   grid-gap: 40px;
   justify-content: center;
   justify-items: center;
+  max-width: 400px;
 }
 
 .logoImg {
@@ -83,7 +84,6 @@
   .logoImg {
     width: 72px;
     height: 72px;
-    margin: 16px;
   }
 
   .infoBlock {
@@ -112,18 +112,22 @@
   .artShadow {
     position: absolute;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     top: 0;
     left: 0;
-    bottom: -40px;
+    bottom: -64px;
     right: 0;
     z-index: -1;
   }
 
   .artShadow img {
-    width: 90%;
-    height: 90%;
-    filter: blur(28px);
+    width: 100%;
+    height: 100%;
+  }
+
+  .logos {
+    justify-self: center;
+    grid-gap: 80px;
   }
 }

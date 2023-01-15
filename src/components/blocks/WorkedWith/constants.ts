@@ -18,7 +18,7 @@ import promBg from '../../../images/bg-shapes/prom.svg';
 import rozetkaBg from '../../../images/bg-shapes/rozetka.svg';
 import lgBg from '../../../images/bg-shapes/lg.svg';
 import kyivstarBg from '../../../images/bg-shapes/kyivstar.svg';
-import pmBg from '../../../images/bg-shapes/pm.svg';
+import pmBg from '../../../images/bg-shapes/pm.png';
 import memusicBg from '../../../images/bg-shapes/memusic.svg';
 import braveryBg from '../../../images/bg-shapes/bravery.svg';
 

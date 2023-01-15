@@ -3,6 +3,8 @@ import cn from 'classnames';
 
 import shadowArt from '../../../images/shadow-art/last-card.png';
 
+import lastCardBg from '../../../images/bg-shapes/last-card.svg';
+
 import somethingLogo from '../../../images/logo/something.png';
 import indevLogo from '../../../images/logo/indev.png';
 import eLogo from '../../../images/logo/e.png';
@@ -45,7 +47,12 @@ export const LastCard: React.FC = () => {
     <div
       className={cn(styles.lastCard)}
     >
-      <div className={cn(cs.infoBlock, styles.infoBlock)}>
+      <div
+        className={cn(cs.infoBlock, styles.infoBlock)}
+        style={{
+          '--card-bg': `url(${lastCardBg})`,
+        } as React.CSSProperties}
+      >
         <div className={cs.textContainer}>
           <p className={cs.title}>There's more</p>
           <p className={cs.subtitle}>I've mentioned the main/largest projects I worked on. We may discuss further upon meetingin Ukraine</p>
@@ -68,7 +75,7 @@ export const LastCard: React.FC = () => {
       <div
         className={cn(styles.artShadow)}
       >
-        <img className="gpu" src={shadowArt} alt="" />
+        <img src={shadowArt} alt="" />
       </div>
 
       <div

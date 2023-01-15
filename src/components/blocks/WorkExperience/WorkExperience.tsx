@@ -5,8 +5,8 @@ import { CardTop } from './CardTop';
 import { CardBottom } from './CardBottom';
 
 import promBgCard from '../../../images/bg-shapes/prom-card.png';
-import indevBgCard from '../../../images/bg-shapes/indevlab-card.svg';
-import trueAgBgCard from '../../../images/bg-shapes/true-ag-card.svg';
+import indevBgCard from '../../../images/bg-shapes/indevlab-card.png';
+import trueAgBgCard from '../../../images/bg-shapes/true-ag-card.png';
 
 import promArtShadow from '../../../images/shadow-art/prom.png';
 import indevArtShadow from '../../../images/shadow-art/indevlab.png';

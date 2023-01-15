@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'classnames';
 
 import bubbleGc from '../../images/bubbles/buble-gc.png';
-import mainBg from '../../images/bg-shapes/main.svg';
+import mainBg from '../../images/bg-shapes/main.png';
 import closeIcon from '../../icons/close.svg';
 
 import { Button } from '../Button';
@@ -30,10 +30,6 @@ export const AppointmentPopup: React.FC = () => {
             <div
               className={cn(styles.bg)}
             >
-              <div
-                className={cn(styles.bgBlur, 'gpu')}
-              />
-
               <img src={mainBg} alt="" />
             </div>
 

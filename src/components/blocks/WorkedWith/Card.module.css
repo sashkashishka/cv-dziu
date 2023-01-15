@@ -32,8 +32,10 @@
   grid-row-gap: 8px;
   justify-items: center;
   padding: 24px 22px;
-  background: rgba(59, 69, 78, 0.5);
-  backdrop-filter: blur(40px);
+  background-image: url('../../../images/bg-dark-card.png'),  var(--card-bg);
+  background-color: white;
+  background-size: cover, cover;
+  background-position: center;
   border-radius: 32px;
 }
 

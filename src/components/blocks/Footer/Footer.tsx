@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'classnames';
 
-import footerBg from '../../../images/bg-shapes/footer.svg';
+import footerBg from '../../../images/bg-shapes/footer.png';
 import textMask from '../../../images/text-bg/footer.png';
 
 import dziuSmall from '../../../images/dziu-small.png';
@@ -18,10 +18,6 @@ export const Footer: React.FC = () => {
         <div
           className={cn(styles.bgContainer)}
         >
-          <div
-            className={cn(styles.bgBlur, 'gpu')}
-          />
-
           <img src={footerBg} alt="" />
         </div>
 
@@ -45,7 +41,9 @@ export const Footer: React.FC = () => {
 
         <img className={styles.qrCode} src={qrCode} alt="" />
 
-        <DownloadCV />
+        <DownloadCV
+          className={styles.cvBtn}
+        />
 
         <nav className={cn(styles.navBottom)}>
           <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>

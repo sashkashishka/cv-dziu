@@ -53,7 +53,7 @@ export const Card: React.FC<iCardProps> = ({
         alt={title}
       />
 
-      <div className={cn(styles.infoBlock, 'gpu')}>
+      <div className={cn(styles.infoBlock)}>
         <div
           className={cn(styles.logoImg)}
         >

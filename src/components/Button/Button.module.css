@@ -33,3 +33,9 @@
 .purpleRound {
   border-radius: 66px;
 }
+
+@media all and (min-width: 768px) {
+  .button {
+    font-size: 20px;
+  }
+}

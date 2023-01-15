@@ -21,17 +21,6 @@
   object-fit: cover;
 }
 
-.bgShapeBlur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  background: rgba(59, 69, 78, 0.5);
-  backdrop-filter: blur(40px);
-}
-
 .innerCard {
   position: relative;
   display: grid;
@@ -119,15 +108,14 @@
   justify-content: center;
   top: 0;
   left: 0;
-  bottom: -32px;
+  bottom: -64px;
   right: 0;
   z-index: 1;
 }
 
 .artShadow img {
-  width: 90%;
-  height: 90%;
-  filter: blur(28px);
+  width: 100%;
+  height: 100%;
 }
 
 @media all and (min-width: 768px) {
