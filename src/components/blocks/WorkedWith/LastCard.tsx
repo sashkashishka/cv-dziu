@@ -34,7 +34,7 @@ const logos = [
   },
   {
     logoImg: interkassaLogo,
-    url: '#',
+    url: 'https://interkassa.com/',
   },
   {
     logoImg: malvinaLogo,

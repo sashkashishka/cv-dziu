@@ -70,6 +70,8 @@
 
 .floatIcon {
   position: absolute;
+  width: 140px;
+  height: 180px;
 }
 
 :global(.fi) {

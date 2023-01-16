@@ -73,6 +73,7 @@ export const Card: React.FC<iCardProps> = ({
           href={url}
           target="_blank"
           rel="noreferrer"
+          data-disabled={!url}
         >
         </a>
       </div>

@@ -35,7 +35,11 @@ export const AppointmentPopup: React.FC = () => {
 
 
             <div className={styles.inner}>
-              <img src={bubbleGc} alt="" />
+              <img
+                className={styles.bubbleLogo}
+                src={bubbleGc}
+                alt=""
+              />
 
               <div className={styles.textContainer}>
                 <p className={styles.title}>
@@ -48,7 +52,8 @@ export const AppointmentPopup: React.FC = () => {
               </div>
 
               <Button
-                variant="purple-round"
+                variant="purple"
+                className={styles.button}
                 onClick={() => {
                   window.open('https://calendar.google.com/calendar/u/0/r/eventedit?state=%5Bnull%2Cnull%2Cnull%2Cnull%2C%5B13%5D%5D', '_blank');
                 }}

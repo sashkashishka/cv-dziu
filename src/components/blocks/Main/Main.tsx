@@ -35,7 +35,7 @@ export const MainBlock: React.FC = () => {
                 '--text-mask-url': `url(${textMask})`
               } as React.CSSProperties}
             >
-              Hey, I’m Oleksiy, a product designer with 7 years of experience
+              Hey, I’m Oleksiy, a product designer with 5 years of experience
             </p>
             <p className="subtitle">
               Not drawing an interface, but designing, validating hypotheses and turning them into money

@@ -122,6 +122,15 @@
   background: rgba(59, 69, 78, 0.8);
 }
 
+.buttonLink[data-disabled="true"] {
+  opacity: 0.3;
+}
+
+.buttonLink[data-disabled="true"]:hover {
+  background: rgba(59, 69, 78, 0.5);
+  cursor: auto;
+}
+
 .firstJob {
   position: absolute;
   top: 0;

@@ -63,6 +63,11 @@
   cursor: pointer;
 }
 
+.bubbleLogo {
+  width: auto;
+  height: 130px;
+}
+
 @media all and (min-width: 768px) {
   .popup {
     max-width: 829px;
@@ -89,6 +94,10 @@
   .textContainer {
     justify-self: start;
     text-align: start;
+  }
+
+  .button {
+    padding: 0 20px;
   }
 }
 

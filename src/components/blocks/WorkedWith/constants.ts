@@ -14,7 +14,7 @@ import parimatchLogo from '../../../images/logo/parimatch.svg';
 import braveryLogo from '../../../images/logo/bravery.svg';
 import memusicLogo from '../../../images/logo/memusic.svg';
 
-import promBg from '../../../images/bg-shapes/prom.svg';
+import promBg from '../../../images/bg-shapes/prom.png';
 import rozetkaBg from '../../../images/bg-shapes/rozetka.svg';
 import lgBg from '../../../images/bg-shapes/lg.svg';
 import kyivstarBg from '../../../images/bg-shapes/kyivstar.svg';
@@ -78,6 +78,6 @@ export const gridCards = [
     logoImg: braveryLogo,
     phoneImg: braveryPhone,
     bg: braveryBg,
-    url: '',
+    url: 'https://shop.brave.ua/',
   },
 ];
