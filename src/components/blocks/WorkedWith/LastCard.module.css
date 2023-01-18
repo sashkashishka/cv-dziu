@@ -36,9 +36,11 @@
   transition: outline 0.3s ease;
 }
 
+/*
 .logoImg img:hover {
-  outline: 2px solid #7b04df;
+   outline: 2px solid #7b04df; 
 }
+*/
 
 .logoImg::before {
   position: absolute;
