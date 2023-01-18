@@ -22,6 +22,8 @@
 .purpleRound:hover {
   background: var(--color-purple-300);
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #7A6EFE;
 }
 
 .purple:disabled,
