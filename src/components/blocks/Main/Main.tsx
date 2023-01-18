@@ -22,7 +22,7 @@ export const MainBlock: React.FC = () => {
         </div>
 
         <nav className={cn('section', styles.navTop)}>
-          <a href="https://www.linkedin.com/in/aleksei-dziubak-b9433a178/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/oleksiy-dziubak-%F0%9F%87%BA%F0%9F%87%A6-b9433a178/">LinkedIn</a>
           <a href="mailto:randomtext95@gmail.com">E-mail</a>
           <a href="https://t.me/Alex_SayDz">Telegram</a>
         </nav>
